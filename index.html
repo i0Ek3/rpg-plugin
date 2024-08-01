@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Password Generator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: 50vw;
+            margin: 50px;
+            padding: 50px;
+            background: RGB(247,247,250);
+            flex-direction: column;
+            font-family: "IBM Plex Mono", monospace;
+        }
+
+        .generate-button {
+            font-size: large;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #fff;
+            border: 1px solid #000000;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .generate-button:hover {
+            font-weight: bold;
+            background-color: rgb(177, 238, 249);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        .password-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+            max-width: 800px;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .password-list li {
+            font-family: "IBM Plex Mono", monospace;
+            margin: 10px;
+            padding: 10px;
+            background-color: #8ab3ad;
+            border: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .password-list li:hover {
+            font-weight: bold;
+            background-color: rgb(177, 238, 249);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <button class="generate-button" id="generate">Generate Your Password</button>
+    <ul class="password-list" id="passwordList"></ul>
+
+    <script src="rpg.js"></script>
+</body>
+</html>
